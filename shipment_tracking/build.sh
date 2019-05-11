@@ -1,10 +1,10 @@
 #!/bin/bash
 set -e
 
-PROJNAME=ShipmentTracking
+PROJNAME=shipment_tracking
 
-# cargo clean
-# rm Cargo.lock
+cargo clean
+rm Cargo.lock
 
 CARGO_INCREMENTAL=0 &&
 cargo build --release --features generate-api-description --target=wasm32-unknown-unknown -vv
