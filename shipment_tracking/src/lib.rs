@@ -1,7 +1,7 @@
 #![cfg_attr(not(any(test, feature = "std")), no_std)]
 
 use ink_core::{
-    env::{self,println},
+    env::{println},
     memory::format,
     memory::string::String,
     storage
