@@ -5,9 +5,9 @@ authors = ["Ricardo Rius ricardo@rius.info"]
 edition = "2018"
 
 [dependencies]
-ink_core = { git = "https://github.com/paritytech/ink", package = "ink_core" }
-ink_model = { git = "https://github.com/paritytech/ink", package = "ink_model" }
-ink_lang = { git = "https://github.com/paritytech/ink", package = "ink_lang" }
+ink_core = { git = "https://github.com/paritytech/ink", package = "ink_core", default-features = false }
+ink_model = { git = "https://github.com/paritytech/ink", package = "ink_model", default-features = false }
+ink_lang = { git = "https://github.com/paritytech/ink", package = "ink_lang", default-features = false }
 parity-codec = { version = "3.3", default-features = false, features = ["derive"] }
 
 [lib]
